@@ -1,0 +1,28 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "models/weapons/sweps/scpsl/244/SCP_244_Ornaments_rgb"
+	"$bumpmap" "models/weapons/sweps/scpsl/244/SCP_244_Ornaments_n"
+    "$phongexponenttexture" "models/weapons/sweps/scpsl/244/SCP_244_Ornaments_e"
+	
+    "$translucent" "1" // Enable translucency
+    "$alpha" "1" // Use alpha channel of the texture
+    "$surfaceprop" "metal" // Adjust surface property as needed
+	
+	"$color2" "[2 2 2]"
+
+    "$phong" "1"
+    "$phongboost" "1"
+    "$phongfresnelranges" "[0 0 0]"
+    "$phongalbedotint" "0"
+
+    //rimlight doesn't properly show in hlmv, make sure you're changing these values in game
+    "$rimlight" "1"
+    "$rimlightexponent" "100"
+    "$rimmask" "1"
+    "$rimlightboost" "1"
+
+    "$normalmapalphaenvmapmask" "1"
+    "$envmapfresnel" "1"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[0.75 0.75 0.75]"
+}
