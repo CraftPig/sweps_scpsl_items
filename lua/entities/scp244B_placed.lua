@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 ENT.Type = "anim"
 ENT.Base = "base_anim"
-ENT.PrintName = "SCP-244"
+ENT.PrintName = "SCP-244B"
 ENT.Author = "Aaron"
 ENT.Spawnable = true
 ENT.Category = "SCP: SL"
