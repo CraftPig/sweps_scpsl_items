@@ -62,6 +62,7 @@ function SWEP:Deploy()
 end
 
 function SWEP:DeploySCP(owner, weapon)
+    if CLIENT then return end
     local startPos = owner:GetShootPos()
     local aimVec = owner:GetAimVector()
     local endPos = startPos + (aimVec * 110)
@@ -114,6 +115,7 @@ function SWEP:PrimaryAttack()
 end
 
 function SWEP:SecondaryAttack()
+    if CLIENT then return end
     local owner = self:GetOwner()
     local startPos = owner:GetShootPos()
     local aimVec = owner:GetAimVector()
