@@ -32,8 +32,6 @@ SWEP.Secondary.ClipSize = -1
 SWEP.Secondary.DefaultClip = -1
 SWEP.Secondary.Automatic = false
 
-local HealAmount = 65
-local ArmorAmount = 0
 local InitializeSEF = false
 
 function SWEP:Initialize()
@@ -59,6 +57,9 @@ function SWEP:Deploy()
 	-- self:SetNextPrimaryFire(CurTime() + self.Owner:GetViewModel():SequenceDuration())
 	
 	if owner:GetAmmoCount(self.Primary.Ammo) == 0 then owner:StripWeapon("weapon_scpsl_244B") end -- Reminder
+	
+	-- print(owner:GetPreviousWeapon())
+	return true
 end
 
 function SWEP:DeploySCP(owner, weapon)
